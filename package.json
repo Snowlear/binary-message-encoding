@@ -1,0 +1,16 @@
+{
+  "name": "binary-message-encoding",
+  "version": "1.0.0",
+  "description": "Simple binary message encoding scheme for a signaling protocol",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "tsc && node dist/index.js"
+  },
+  "author": "Bekir Efe Cakir",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.2.5",
+    "typescript": "^5.1.3"
+  }
+}
