@@ -20,6 +20,14 @@ A message can contain a variable number of headers and a binary payload. The hea
 
 The API consists of two main components: the `Message` class and the `MessageCodec` interface.
 
+## Assumptions
+In designing and implementing this encoding scheme, we made several assumptions about the requirements and constraints of the problem. These assumptions include:
+
+The maximum size of header names and values (1023 bytes) is sufficient for most use cases.
+The maximum number of headers in a message (63) is sufficient for most use cases.
+The maximum size of the message payload (256 KiB) is sufficient for most use cases.
+ASCII encoding is sufficient for header names and values.
+
 ### Message
 
 The `Message` class represents a message with headers and a payload. It has two properties: `headers`, which is a Map of string keys and string values, and `payload`, which is a byte array.
